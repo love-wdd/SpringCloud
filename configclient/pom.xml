@@ -4,11 +4,11 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.chry</groupId>
-    <artifactId>springcloud.helloworld.eureka.server</artifactId>
+    <artifactId>Springcloud.helloworld.config.client</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <name>Springcloud.helloworld.config.client</name>
     <packaging>jar</packaging>
-    <name>springcloud.helloworld.Eureka.server</name>
-    <description>Demo Spring Eureka Server</description>
+    <description>Demo Spring Config Client</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -24,28 +24,26 @@
     </properties>
 
     <dependencies>
-        <!--eureka server -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-eureka</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-eureka-server</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-config</artifactId>
         </dependency>
-        <!-- spring boot test-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-config-server</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
     </dependencies>
 
@@ -80,5 +78,6 @@
             </snapshots>
         </repository>
     </repositories>
+
 
 </project>
